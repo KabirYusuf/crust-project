@@ -23,6 +23,7 @@ bin/
 *.iml
 *.ipr
 *.env
+target/
 
 out/
 !**/src/main/**/out/
