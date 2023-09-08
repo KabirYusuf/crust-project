@@ -1,4 +1,4 @@
-package org.crustproject.usermanagement.data.dto;
+package org.crustproject.usermanagement.data.dto.response;
 
 import lombok.Getter;
 import lombok.Setter;

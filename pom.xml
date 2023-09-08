@@ -12,7 +12,6 @@
         <module>auth</module>
         <module>user-management</module>
         <module>entry-point</module>
-        <module>notification-system</module>
         <module>task-management</module>
     </modules>
 

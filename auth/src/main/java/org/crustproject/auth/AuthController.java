@@ -1,8 +1,9 @@
 package org.crustproject.auth;
 
-import org.crustproject.usermanagement.data.dto.ApiResponse;
-import org.crustproject.usermanagement.data.dto.LoginRequest;
-import org.crustproject.usermanagement.data.dto.RegistrationRequest;
+import lombok.extern.slf4j.Slf4j;
+import org.crustproject.usermanagement.data.dto.response.ApiResponse;
+import org.crustproject.usermanagement.data.dto.request.LoginRequest;
+import org.crustproject.usermanagement.data.dto.request.RegistrationRequest;
 import org.crustproject.usermanagement.data.enums.Role;
 import org.crustproject.usermanagement.data.model.User;
 import org.crustproject.usermanagement.service.UserService;

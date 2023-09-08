@@ -1,12 +1,10 @@
 package org.crustproject.entrypoint.controller;
 
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.crustproject.auth.AuthController;
-import org.crustproject.usermanagement.data.dto.ApiResponse;
-import org.crustproject.usermanagement.data.dto.LoginRequest;
-import org.crustproject.usermanagement.data.dto.RegistrationRequest;
+import org.crustproject.usermanagement.data.dto.response.ApiResponse;
+import org.crustproject.usermanagement.data.dto.request.LoginRequest;
+import org.crustproject.usermanagement.data.dto.request.RegistrationRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

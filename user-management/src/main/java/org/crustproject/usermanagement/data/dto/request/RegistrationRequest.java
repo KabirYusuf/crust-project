@@ -1,11 +1,11 @@
-package org.crustproject.usermanagement.data.dto;
+package org.crustproject.usermanagement.data.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
-public class LoginRequest {
+public class RegistrationRequest {
     private String email;
     private String password;
 }

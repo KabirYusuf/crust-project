@@ -72,7 +72,7 @@ public class CustomAuthenticationSuccessHandler extends SavedRequestAwareAuthent
 
         response.setContentType("application/json");
 
-        String apiResponse = "{\"data\": \"" + token + "," +"\"\n \"isSuccessful\": \" + true}";
+        String apiResponse = "{\"data\": \"" + token + "," +"\"\n \"isSuccessful\":  + true}";
         response.getWriter().write(apiResponse);
 
         log.info(apiResponse);

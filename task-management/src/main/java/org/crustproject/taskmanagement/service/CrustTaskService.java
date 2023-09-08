@@ -1,11 +1,11 @@
 package org.crustproject.taskmanagement.service;
 
 import org.crustproject.auth.JwtService;
-import org.crustproject.taskmanagement.data.dto.CreateTaskRequest;
+import org.crustproject.taskmanagement.data.dto.request.CreateTaskRequest;
 import org.crustproject.taskmanagement.data.model.Task;
 import org.crustproject.taskmanagement.data.repository.TaskRepository;
 import org.crustproject.taskmanagement.exception.TaskException;
-import org.crustproject.usermanagement.data.dto.ApiResponse;
+import org.crustproject.usermanagement.data.dto.response.ApiResponse;
 import org.crustproject.usermanagement.data.model.User;
 import org.crustproject.usermanagement.service.UserService;
 import org.springframework.stereotype.Service;
@@ -29,8 +29,9 @@ public class CrustTaskService implements TaskService{
         this.userService = userService;
     }
     @Override
+
     public ApiResponse createTask(String jwt, CreateTaskRequest createTaskRequest) {
-        String email = jwtService.extractUsername(jwt);
+        String email = jwtService.extractUsername(jwt.substring(7));
         User taskCreator = userService.findUserByEmail(email);
         Task task = new Task();
         task.setTitle(createTaskRequest.getTitle());
@@ -66,6 +67,7 @@ public class CrustTaskService implements TaskService{
                 .findById(taskId)
                 .orElseThrow(()-> new TaskException(TASK_DOESNT_EXIST));
         task.setCompleted(!task.isCompleted());
+        taskRepository.save(task);
         return getApiResponse(TASK_UPDATED_SUCCESSFULLY);
     }
 }

@@ -1,8 +1,8 @@
 package org.crustproject.taskmanagement.service;
 
-import org.crustproject.taskmanagement.data.dto.CreateTaskRequest;
+import org.crustproject.taskmanagement.data.dto.request.CreateTaskRequest;
 import org.crustproject.taskmanagement.data.model.Task;
-import org.crustproject.usermanagement.data.dto.ApiResponse;
+import org.crustproject.usermanagement.data.dto.response.ApiResponse;
 
 import java.util.List;
 

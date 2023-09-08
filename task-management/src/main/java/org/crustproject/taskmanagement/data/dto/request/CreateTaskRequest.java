@@ -1,4 +1,4 @@
-package org.crustproject.taskmanagement.data.dto;
+package org.crustproject.taskmanagement.data.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;
