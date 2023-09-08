@@ -75,7 +75,6 @@ public class CustomAuthenticationSuccessHandler extends SavedRequestAwareAuthent
         String apiResponse = "{\"data\": \"" + token + "," +"\"\n \"isSuccessful\":  + true}";
         response.getWriter().write(apiResponse);
 
-        log.info(apiResponse);
 
         try {
             super.onAuthenticationSuccess(request, response, authentication);

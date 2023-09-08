@@ -1,6 +1,6 @@
 # Crust Project
 
-The Crustproject Application Backend is a Java 17-based, Spring Boot 3-powered, Spring Security 6-secured, PostgreSQL-backed, and Multi-Module structured solution. It serves as the backbone for a contemporary task management system, facilitating seamless task creation, organization, and monitoring. By implementing OAuth2, it ensures secure user authentication and authorization. Its modular design streamlines development and maintenance.
+The Crust project Application Backend is a Java 17-based, Spring Boot 3-powered, Spring Security 6-secured, PostgreSQL-backed, and Multi-Module structured solution. It serves as the backbone for a contemporary task management system, facilitating seamless task creation, organization, and monitoring. By implementing OAuth2, it ensures secure user authentication and authorization. Its modular design streamlines development and maintenance.
 ## Key Features
 
 - Java 17: This backend harnesses the latest Java 17 capabilities, offering superior performance, enhanced memory management, and heightened developer productivity.
