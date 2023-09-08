@@ -55,6 +55,8 @@ public class CustomAuthenticationSuccessHandler extends SavedRequestAwareAuthent
         user.setRoles(roleSet);
         String token = jwtService.generateToken(new SecuredUser(user));
 
+        if (userService.findUserByEmail(email) == null)userService.saveUser(user);
+
 
         OauthUserDetail oauthUserDetail = new OauthUserDetail();
         oauthUserDetail.setEmail(email);

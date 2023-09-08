@@ -1,11 +1,9 @@
 package org.crustproject.taskmanagement.data.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.crustproject.usermanagement.data.model.User;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
@@ -21,6 +19,8 @@ public class Task {
     private String title;
     private String description;
     private boolean completed;
+    @ManyToOne
+    private User user;
     @CreatedDate
     private LocalDateTime createdAt;
     @UpdateTimestamp
